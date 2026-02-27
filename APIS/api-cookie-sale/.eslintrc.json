@@ -1,0 +1,5 @@
+{
+    "extends": [
+        "@mundiale-private/eslint-config"
+    ]
+}
