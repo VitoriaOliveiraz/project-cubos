@@ -24,29 +24,18 @@ const usuarios: { nome: string; pets: string[] }[] = [
 function buscarDonoPet(
   lista: { nome: string; pets: string[] }[],
   nomePet: string,
-) {
-  let usuarioEncontrado;
+): string {
+  const usuarioEncontrado = lista.find((donoPet) =>
+    donoPet.pets.includes(nomePet),
+  );
 
-  // for (let i = 0; i < lista.length; i++) {
-  //   for (let j = 0; j < lista[i].pets.length; j++) {
-  //     if (lista[i].pets[j] === nomePet) {
-  //       usuarioEncontrado = lista[i];
-  //       break;
-  //     }
-  //   }
-  //   if (usuarioEncontrado) {
-  //     break;
-  //   }
-  // }
-
-  // if (usuarioEncontrado) {
-  //   console.log(`O dono(a) do(a) ${nomePet} é o(a) ${usuarioEncontrado.nome}.`);
-  // } else {
-  //   console.log(
-  //     `Que pena, o(a) ${nomePet} não possui um(a) dono(a) cadastrado(a)!`,
-  //   );
-  // }
+  if (usuarioEncontrado) {
+    return `O dono(a) do(a) ${nomePet} é o(a) ${usuarioEncontrado.nome}.`;
+  }
+  
+  return `Que pena, o(a) ${nomePet} não possui um(a) dono(a) cadastrado(a)!`;
 }
 
-buscarDonoPet(usuarios, "Max");
-buscarDonoPet(usuarios, "Guido");
+console.log(buscarDonoPet(usuarios, "Max"))
+console.log(buscarDonoPet(usuarios, "Vhicky"))
+

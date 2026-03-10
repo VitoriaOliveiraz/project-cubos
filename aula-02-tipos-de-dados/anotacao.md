@@ -113,6 +113,10 @@ function imprimirArray(array: string[]): string {
 const somar = (a: number, b: number): number => {
     return a + b;
 }
-
-
 ```
+
+# Anotações de exercícios ✏️
+- Devo assumir que o primeiro exercício me pegou(01-implement-typeScript), tive que consultar a explicação do Professor Ciqueira, mas não para ver a solução completa, apenas para questão de tipos. Fzendo o primeiro exercício achei que ele tinha muitos for, não sei se isso é aceitavel, mas na minha percepção pode ser melhor, e é confuso de se entender, talvez com outros metodos de array, seja melhor. Essa foi minha primeira anotação, ainda em progresso na rezolução. (horas: 17:14)
+
+- Bem realmente havia um jeito menos burocratico e chato de se fazer aquele exercício, implementei um find pra fazer uma busca já percorrendo cada objeto do array e coloquei um includes. Funcionou e foi mais pratico em minha percepção, além é claro de notar meu proprio erro, criei uma função dom retorno e esqueci o retorno. Embora foi um erro de desatenção, uma variavel com retorno onde não se mostra esse retorno ele so sai. 
+
